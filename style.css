@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:'poppins',sans-serif;
+}
+ .protfolio-container{
+    min-height: 100vh;
+    width:100% ;
+    display: flex;
+}  
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position:fixed ;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font: size 5rem;
+    color:gold;
+    position: relative;
+
+
+}.left-container, .right-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+} 
+.left-container{
+   background:#262525;
+   width: 70%;
+   padding-left: 3rem;
+}
+.right-container{
+  background:linear-gradient(-45deg,#3877FF,#262525 70%);
+  width: 30%;
+}
+.icons .fa-brands{
+    color: #e81442;
+    font-size: 1.7rem;
+    border-radius: 100px;
+    box-shadow: 4px 4px 2px 2px yellow;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+   
+}
+.content{
+    margin-left: 4rem;
+}
+.content.intro{
+  font: size 1.5rem; 
+  color: rgb(243, 17, 51);
+}
+.content .intro span{
+   color: #5dee97;
+}
+.content h1{
+  font-size: 4rem;
+  color:blue;
+}
+.content .detail{
+    font-size: 1.1rem;
+    color: #5116af;
+    max-width:38rem ;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+
+    
+}
+.btn-container button{
+    border: 1rem solid #5DB9EE ;
+    font-size: 1.1rem;
+    padding: .10rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s ease;
+
+}
+.button:nth-child(1){
+    background: #5DB9EE;
+    color: #262525;
+}
+.button:nth-child(2){
+    background: transparent;
+    color: #5DB9EE;
+    margin-left: 2rem ;
+
+
+}
+.button:nth-child(1):hover{
+    background: transparent;
+    color: #5DB9EE;
+}
+.button:nth-child(2):hover{
+    background:#5DB9EE;
+    color:#262525;
+}
+.icons .fa-brands :hover{
+    cursor: pointer;
+    background: linear-gradient(#fff,#3877FF);
+    -webkit-background-clip:text ;
+    -webkit-text-fill-color: transparent;
+}
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-40%);
+
+} 
+.circle:nth-child(1){
+   background:linear-gradient(90deg, transparent 50%,#262525 50%);
+   /* width: 38rem; */
+}
+.circle:nth-child(2){
+    width: 30rem;
+    background-image: url("image/jay.jpg");
+    animation: slide 4s infinite;
+    background-size:100%;
+    background-repeat: no-repeat;
+    border: 3rem  solid white;
+    box-shadow: 
+    0 0 1rem #fff , inset 0 0 #fff , 0 0 2rem #3877FF, inset 0 0 2rem #3877FF, 0 0 4rem #5DB9EE, inset 0 0 4rem;
+}
+.navlist li a::after,  .navlist .active ::after{
+    content: "";
+    position: absolute;
+    background:white;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform:scaleX(0);
+    transform-origin: bottom right;
+    transition:transform .5s;
+
+}
+.navlist li a:hover::after,  .navlist .active::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+marquee{
+    font-size: larger;
+    font-weight: 500;
+    font-style: italic;
+    color: darkred;
+
+}
+@keyframes slide{
+    25%{
+        width: 30rem;
+        background-size: cover;
+        background: url(css6.jpg);
+    }
+    50%{
+        background: url(css2.jpg);
+    }
+    75%{
+        background: url(css5.jpg);
+    }
+}
+
+.new{
+    font-size: larger;
+    font-weight: 500;
+    color:chartreuse;
+    text-transform: uppercase;
+   text-decoration: underline;
+}
+h5{
+    
+        background-color: chartreuse;
+        text-align: center;
+        font-size:small;
+        box-shadow:0 0 1rem #fff , inset 0 0 #fff , 0 0 2rem #3877FF, inset 0 0 2rem #3877FF, 0 0 4rem #5DB9EE, inset 0 0 4rem;
+    
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: red;
+} 
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background:black;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+.color{
+  color: darkred;
+  
+}
+
+ 
+/* home page desige */
+  * {box-sizing: border-box;} 
+
+ body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+} 
+
+.topnav { 
+  padding:(-500px);
+  overflow: hidden; 
+  background-color: black;
+  box-shadow:0 0 1rem #fff , inset 0 0 #fff , 0 0 2rem #3877FF, inset 0 0 2rem #3877FF, 0 0 4rem #5DB9EE, inset 0 0 4rem;
+
+} 
+
+.topnav a {
+  float: right;
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size: 17px;
+  text-decoration: underline;
+  font-size: larger;
+  font-weight: 500;
+  color:chartreuse;
+  text-transform: uppercase;
+ text-decoration: underline;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+
+}
+
+.topnav a.active {
+  background-color: #21f372;
+  color:red;
+  background: transparent;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+.topnav a.active :hover{
+  background:blue;
+}
+
+.topnav .search-container {
+  float: left;
+}
+
+.topnav input[type=text] {
+  padding: 6px 40px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  border: 2px solid red;
+  border-radius: 50px;
+}
+
+.topnav .search-container button {
+    float: right; 
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 2px solid blue; 
+ 
+
+} 
+
+.topnav .search-container button:hover {
+  background: black;
+}
+
+@media screen and (max-width: 100px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid red;  
+  }
+
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>protfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <style>
+      body {font-family: Arial, Helvetica, sans-serif;}
+      
+      /* Full-width input fields */
+       input[type=text], input[type=password] {
+       
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      } 
+    
+      /* Extra styles for the cancel button */
+      .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+      }
+      
+      /* Center the image and position the close button */
+      .imgcontainer {
+        text-align: center;
+        margin: 12px 0 6px 0;
+        position: relative;
+      }
+      
+      img.avatar {
+        width: 20%;
+        border-radius: 30%;
+      }
+        .container {
+        padding: 2px;
+      } 
+      span.psw {
+        float: right;
+        padding-top: 8px;
+      }
+      
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 30px;
+      }
+      
+      /* Modal Content/Box */
+      .modal-content {
+        background-color:yellow;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+      }
+      
+      /* The Close Button (x) */
+      .close {
+        position: absolute;
+        right: 50px;
+        top: 0;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+        border-radius: 50%;
+      } 
+      
+       .close:focus {
+        color: red;
+        cursor: pointer;
+        border-radius: 50%;
+      } 
+       
+      /* Add Zoom Animation */
+      .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+      } 
+      
+      @-webkit-keyframes animatezoom {
+        from {-webkit-transform: scale(0)} 
+        to {-webkit-transform: scale(1)}
+      }
+        
+      @keyframes animatezoom {
+        from {transform: scale(0)} 
+        to {transform: scale(1)}
+      }
+      
+      /* Change styles for span and cancel button on extra small screens */
+      @media screen and (max-width: 300px) {
+        span.psw {
+           display: block;
+           float: none;
+        }
+        .cancelbtn {
+           width: 100%;
+        }
+      }
+      </style>
+      </head>
+      <body>
+        <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>   -->
+      
+      <div id="id01" class="modal">
+        
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="logo.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+      
+      <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+      </script>
+    <!-- hahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+    <script>
+      function myFunction() {
+       document.getElementById("demo").innerHTML="WEB DEVLOPER";
+      }
+      </script>
+    <style>
+    </style>
+
+    <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <div class="circle:nth-child"></div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <h5><marquee >.......online sopping website.......... online sopping website..........online sopping website.......... online sopping website..........</marquee></h5> 
+ <div class="topnav" >
+  <!-- <a class="active" href="" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">login</a>  --></a>
+  <a><button onclick="document.getElementById('id01').style.display='block'"  float: right; text-transform: uppercase;
+   text-decoration: underline;>Login</button> 
+  <a href="#about">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <a style="float: left;"><img src="logo.png" class="logo"  alt="" width="35" height="35" > </a> 
+   <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form> 
+  </div>  
+</div> 
+<div style="padding-left:16px">
+</div> 
+
+</body>
+</html>
+    
+    <!-- <h5><marquee >.......online sopping website.......... online sopping website..........online sopping website.......... online sopping website..........</marquee></h5> -->
+    
+    <div class="protfolio-container">
+     <ul class="navlist">
+        <!-- <li><a href="http://127.0.0.1:5501/index2.html" class="active"  title=" HERE GO TO SHOPING" > online </a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="hello" title="9508772172">service no.</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">about</a></li> -->
+     </ul>
+     <div class="left-container">
+       <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100074644573610">
+        <i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://in.linkedin.com/">
+        <i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/">
+        <i class="fa-brands fa-twitter"></i></a>
+        <a href="codepen.io ">
+        <i class="fa-brands fa-codepen"></i></a>
+       </div>
+       <div class="content">
+        <p class="intro">I LOVE MY INDIA<span >JAY</span></p>
+        <h1><p id="demo"><span style="color:yellow;">ON</span><span style="color:rgb(24, 245, 27);">LINE</span> <span style="color: blue;">WEB</span><span style="color: chartreuse;">SITES</span></p></h1>
+        <button type="button" onclick="myFunction()"><span style= "color: blue;" > ok<span></button>
+        <p class="detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quod libero, reprehenderit nobis at recusandae. Ducimus temporibus mollitia, esse cupiditate voluptatum adipisci hic voluptas repellat dolorem velit omnis impedit eaque!</p>
+        <div class="btn-container">
+            <button title="Because I am konw HTML CSS JAVASCRIPT" class="new">hire me</button>
+         <button>view project</button> 
+        </div>
+
+       </div>
+     </div>
+     <div class="right-container"></div>
+     <div class="design">
+        <div class="circle"></div>
+        <div class="circle"></div>
+     </div> 
+     </div>
+     <p style="border: 1px solid blue">
+    </p>
+    <div style="border: 1px solid black;">
+      <h5><marquee >.....best online offers 80% of ......... .....best online offers 80% of ..............best online offers 80% of ..............best online offers 80% of .........</marquee></h5></div>
+   </style>
+</head>
+<body>
+
+<h2 style="color:blue"  >online web page</h2>
+<p style="background-color: darkred;">->there are a plethora of businesses you can start online and make profit. thanks to the internet that has given us so money opportunuties </p>
+<p style="background-color: chocolate;">->it's possible to start a bussiness with no money if you have an organization plan and stratery</p>
+
+
+<header>
+  <h2>www.com</h2>
+</header>
+
+<section>
+  <nav>
+    <ul style="background-image: url(rose2.jpeg);">
+    
+      <li><a href="https://shorturl.at/gpxDG">1. GAMING LAPTOP</a></li>
+      <li><a href="https://shorturl.at/akZ36">2.BELTS</a></li>
+      <li><a href="https://shorturl.at/rsAE9">3.MATS</a></li>
+      <li><a href="https://shorturl.at/oBFR8">4.SAFARI SUITCASE</a></li>
+      <li><a href="https://shorturl.at/hwG38">5.MOBILE</a></li>
+      <li><a href="https://www.myntra.com/mens-watches">6.WATCH</a></li>
+      <li><a href="https://shorturl.at/gpxDG">7.GAMING LAPTOP</a></li>
+      <li><a href="https://shorturl.at/akZ36">8.BELTS</a></li>
+      <li><a href="https://shorturl.at/rsAE9">9.MATS</a></li>
+      <li><a href="https://shorturl.at/oBFR8">10.SAFARI SUITCASE</a></li>
+      <li><a href="https://shorturl.at/hwG38">11.MOBILE</a></li>
+    
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>store ideas</h1>
+    <p style="background-color: crimson;">->HERE IS AN OVERVIEW OF THE BEST LAPTOP BRANDS IN INDIA</p>
+    <p style="background-color: green;">->HERE IS AN OVERVIEW OF THE BEST BELTS BRANDS IN INDIA</p>
+    <p style="background-color: gold;">->HERE IS AN OVERVIEW OF THE BEST MATS BRANDS IN INDIA</p>
+    <p style="background-color: blue;">->IS AN OVERVIEW OF THE BEST SAFARI SUITCASE BRANDS IN INDIA</p>
+    <p style="background-color: orangered;">->HERE IS AN OVERVIEW OF THE BEST MOBILE BRANDS IN INDIA</p>
+  
+  </article>
+  <h1 style="text-align: center;" class="color">MULTIPAL ONLINE PRODUCT</h1>
+  <h3 ><a href="http://127.0.0.1:5503/index6.html"><img src="watch1.webp"  class="logo"  alt="" width="267" height="300"></a><a href="http://127.0.0.1:5501/index3.html"><img src="watch2.webp" class="logo"  alt="" width="300" height="300"><a href="https://shorturl.at/efLMP"><img src="watcj3.jpg" class="logo"  alt="" width="300" height="300"></a><a href="http://127.0.0.1:5501/index1.html"><img src="watch4.jpeg" class="logo"  alt="" width="300" height="300"></a><a href="https://shorturl.at/efLMP"><img src="watch5.webp" class="logo"  alt="" width="300" height="300"></a><a href="http://127.0.0.1:5501/index5.html"><img src="safari1.webp" class="logo"  alt="" width="272" height="300"></a><img src="safari2.webp" class="logo"  alt="" width="300" height="300"><img src="safari3.webp" class="logo"  alt="" width="300" height="300"><img src="safari4.jpg" class="logo"  alt="" width="300" height="300"><img src="safari1.webp" class="logo"  alt="" width="300" height="300"><img src="mat3.jpg" class="logo"  alt="" width="272" height="300"><img src="mats2.jpg" class="logo"  alt="" width="300" height="300"><img src="mat4.jpeg" class="logo"  alt="" width="300" height="300"><img src="mat3.jpg" class="logo"  alt="" width="300" height="300"><img src="mats2.jpg" class="logo"  alt="" width="300" height="300"><img src="pc1.jpeg" class="logo"  alt="" width="272" height="300"><img src="pc2.jpg" class="logo"  alt="" width="300" height="300"><img src="pc3.jpeg" class="logo"  alt="" width="300" height="300"><img src="pc4.jpeg" class="logo"  alt="" width="300" height="300"><img src="pc5.jpeg" class="logo"  alt="" width="300" height="300"><img src="belt5.webp" class="logo"  alt="" width="272" height="300"><img src="belt3.jpg" class="logo"  alt="" width="300" height="300"><img src="belt4.jpg" class="logo"  alt="" width="300" height="300"><img src="belt5.webp" class="logo"  alt="" width="300" height="300"><img src="belt3.jpg" class="logo"  alt="" width="300" height="300"></h3>
+</a></h3>
+</section>
+
+<footer>
+  <p>THANK YOU</p>
+</footer>
+</body>
+</html>
